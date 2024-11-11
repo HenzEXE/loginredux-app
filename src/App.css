@@ -1,38 +1,101 @@
-.App {
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body, html {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url('background.gif') no-repeat center center fixed;
+  background-size: cover;
+  overflow: hidden;
+  position: relative;
+}
+
+
+.purple-text {
+  color: rgb(146, 0, 122);
+}
+
+form[name="loginForm"] {
+  display: flex;
+  flex-direction: column;
+  width: 350px; /* Perkecil lebar form */
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  background: rgb(0, 0, 0);
+  border: 2px solid #500038;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column; /* Ubah menjadi column */
+  margin-bottom: 15px;
+}
+
+label {
+  font-weight: bold;
+  font-size: 18px; /* Ukuran font label lebih kecil */
+}
+
+input[type="email"], input[type="password"] {
+  height: 30px; /* Perkecil tinggi input */
+  padding: 5px; /* Kurangi padding */
+  font-size: 18px; /* Ukuran font input lebih kecil */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+input[type="submit"] {
+  width: 100px;
+  height: 35px; /* Perkecil tinggi tombol */
+  border: none;
+  border-radius: 5px;
+  font-size: 18px; /* Ukuran font tombol lebih kecil */
+  background: #ffffff;
+  color: rgb(146, 0, 122);
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+input[type="submit"]:hover {
+  background: #0056b3;
+}
+
+.message {
+  font-size: 18px; /* Ukuran font pesan lebih kecil */
+  margin-top: 10px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.footer-text { 
+    font-size: 16px;
+    font-weight: bold;
+    animation: rgbColor 3s infinite;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    font-size: 14px;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  
+  @keyframes rgbColor {
+    0% {
+        color: rgb(255, 0, 0);
+    }
+    33% {
+        color: rgb(0, 255, 0);
+    }
+    66% {
+        color: rgb(0, 0, 255);
+    }
+    100% {
+        color: rgb(255, 0, 0);
+    }
   }
-  to {
-    transform: rotate(360deg);
-  }
-}
