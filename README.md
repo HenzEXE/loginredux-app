@@ -8,6 +8,8 @@ password : admin
 
 ## Available Scripts
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/6e1bbef1-7eab-431f-9d7e-e9f1562e41ff/deploy-status)](https://app.netlify.com/sites/henz-loginwithredux/deploys)
+
 In the project directory, you can run:
 
 ### `npm start`
