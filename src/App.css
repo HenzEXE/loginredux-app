@@ -26,7 +26,7 @@ body, html {
 form[name="loginForm"] {
   display: flex;
   flex-direction: column;
-  width: 350px; /* Perkecil lebar form */
+  width: 350px; 
   padding: 20px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
@@ -36,29 +36,29 @@ form[name="loginForm"] {
 
 .form-group {
   display: flex;
-  flex-direction: column; /* Ubah menjadi column */
+  flex-direction: column; 
   margin-bottom: 15px;
 }
 
 label {
   font-weight: bold;
-  font-size: 18px; /* Ukuran font label lebih kecil */
+  font-size: 18px; 
 }
 
 input[type="email"], input[type="password"] {
-  height: 30px; /* Perkecil tinggi input */
-  padding: 5px; /* Kurangi padding */
-  font-size: 18px; /* Ukuran font input lebih kecil */
+  height: 30px; 
+  padding: 5px;
+  font-size: 18px; 
   border: 1px solid #ccc;
   border-radius: 5px;
 }
 
 input[type="submit"] {
   width: 100px;
-  height: 35px; /* Perkecil tinggi tombol */
+  height: 35px;
   border: none;
   border-radius: 5px;
-  font-size: 18px; /* Ukuran font tombol lebih kecil */
+  font-size: 18px;
   background: #ffffff;
   color: rgb(146, 0, 122);
   cursor: pointer;
@@ -70,7 +70,7 @@ input[type="submit"]:hover {
 }
 
 .message {
-  font-size: 18px; /* Ukuran font pesan lebih kecil */
+  font-size: 18px; 
   margin-top: 10px;
   text-align: center;
 }
